@@ -1,0 +1,30 @@
+  <html>
+    <head>
+      <title>Exemplo Mais de Um Usuário</title>
+    </head>
+		<body>
+			<form name = "usr" method="post" action="LabBD-Gr5-ProdEletron-Exerc4-pegaUsr.php">
+			Nome: <input type="text" name="usuario">
+			<br>
+			<br>
+			Senha: <input type="password" name="senha">
+			<br>
+			<br>
+			<input type="submit" value = "Enviar">
+			</form>
+			
+<?php
+	//if(isset($_SESSION['$erroNoLogin']))
+	//	{
+		//echo $_SESSION['$erroNoLogin'];
+		//unset($_SESSION['$erroNoLogin']);
+		session_unset();
+		session_destroy();
+		
+	//	}
+			?>
+
+			
+			
+		</body>
+  </html>
